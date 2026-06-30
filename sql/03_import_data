@@ -1,0 +1,17 @@
+# Import Data
+
+1. Open MySQL Workbench.
+2. Select the `customer_churn` database.
+3. Right-click the schema and choose **Table Data Import Wizard**.
+4. Select the file:
+
+   data/cleaned/customer_churn_cleaned.csv
+
+5. Import into the existing table:
+
+   customer_churn_cleaned
+
+6. Verify the import:
+
+```sql
+SELECT COUNT(*) FROM customer_churn_cleaned;
